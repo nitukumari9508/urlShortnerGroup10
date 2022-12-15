@@ -7,7 +7,7 @@ router.get("/test-me",function(req,res){
     res.send("okk fine")
 })
 
-router.post("/url/shorten",urlController.shortUrlData)
+router.post("/url/shorten",urlController.createShortUrl )
 router.get("/:urlCode",urlController.redirect)
 
 module.exports= router
